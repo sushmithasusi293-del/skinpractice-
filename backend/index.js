@@ -12,7 +12,7 @@ app.get('/', (req, res) => {
 })
 
 
-const { MongoClient, ServerApiVersion } = require('mongodb');
+const { MongoClient, ServerApiVersion ,ObjectId} = require('mongodb');
 const uri = "mongodb+srv://sushmithasusi293_db_user:z0ZW6AMYxpe6rCuk@cluster0.gquovth.mongodb.net/?appName=Cluster0";
 
 // Create a MongoClient with a MongoClientOptions object to set the Stable API version
@@ -38,6 +38,41 @@ async function run() {
             const result = await serum.insertOne(data)
             res.send(result)
         })
+
+
+
+    app.get("/getdata",async(req,res)=>{
+        const sdata=serum.find()
+        const result=await sdata.toArray();
+        res.send(result);
+    })
+        app.get("/getid/:id",async(req,res)=>{
+        const id=req.params.id;
+        const obj={_id:new ObjectId(id)};
+        const result=await serum.findOne(obj);
+        res.send(result);
+    })
+    app.patch("/edit/:id",async(req,res)=>{
+        const id=req.params.id;
+        const obj={_id:new ObjectId(id)};
+        const data=req.body;
+        const updatedata={$set:{...data}};
+        const options={upsert:true};
+        const result=await serum.updateOne(obj,updatedata,options)
+        res.send(result);
+    })
+
+
+       
+
+    app.delete("/del/:id",async(req,res)=>{
+        const id=req.params.id;
+        console.log(id);
+        const obj={_id:new ObjectId(id)};
+        const result=await serum.deleteOne()
+        res.send(result);
+    })
+
 
     // Send a ping to confirm a successful connection
     await client.db("admin").command({ ping: 1 });

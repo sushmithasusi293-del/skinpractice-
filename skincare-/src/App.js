@@ -1,13 +1,8 @@
-import logo from './logo.svg';
 import './App.css';
 import Navbar from './pages/Navbar';
 import Home from './pages/Home';
 import Footer from './pages/Footer';
-import Sunscreen from './pages/Sunscreen';
-import Toner from './pages/Toner';
-import Serum from './pages/Serum'
-import Faceoil from './pages/Faceoil';
-import Moisturizer from './pages/Moisturizer';
+
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Sunprotect from './pages/Sunprotect';
 import Tonerproduct from './pages/Tonerproduct'

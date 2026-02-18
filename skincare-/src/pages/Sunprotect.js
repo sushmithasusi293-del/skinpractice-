@@ -31,7 +31,7 @@ const Sunprotect = () => {
 
                     <div key={item.id}>
                         <div className="box">
-                            <img src={item.img} width={100} height={200} />
+                            <img src={item.img} width={100} height={200} alt={item.name}/>
 
                         </div><div className="pa">
                             <p>{item.name}<span className="e3"><FaStarHalfAlt /><FaStarHalfAlt /><FaStarHalfAlt /><FaStarHalfAlt /><FaStarHalfAlt /></span></p>

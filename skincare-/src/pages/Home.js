@@ -32,14 +32,14 @@ const Home = () => {
 
             <div className='row'>
                 <div className='col1'>
-                    <img src={skin1} />
+                    <img src={skin1} alt="Skin product 1"  />
                 </div>
                 <div className='col2'>
                     <p>TREAT YOUR SKIN WITH THE RIGHT KIND OF LOVE</p>
                     <button>Shop Now</button>
                 </div>
                 <div className='col3'>
-                    <img src={skin2} />
+                    <img src={skin2} alt="Skin product 2"  />
                 </div>
             </div>
 
@@ -54,9 +54,9 @@ const Home = () => {
 
             <div className='row1'>
                 <div className='c1'>
-                    <div class="card1" >
-                        <img src={skin3} width={100} height={220} />
-                        <div class="card-body1">
+                    <div className="card1" >
+                        <img src={skin3} width={100} height={220} alt="Skin product 3" />
+                        <div className="card-body1">
                             <p className='g'>Derma<span className="starss"><TiStar /><TiStar /><TiStar /><TiStar /><TiStar /></span></p>
                             <h6>AiryGlow Gel Sunscreen SPF 60</h6>
                             <p className='g1'>Rs.100.00 - Rs.300.00
@@ -65,9 +65,9 @@ const Home = () => {
                     </div>
                 </div>
                 <div className='c2'>
-                    <div class="card2" >
-                        <img src={skin4} width={200} height={220} />
-                        <div class="card-body2">
+                    <div className="card2" >
+                        <img src={skin4} width={200} height={220} alt="Skin product 4" />
+                        <div className="card-body2">
                             <p className='g3'>Loreal<span className="starss"><TiStar /><TiStar /><TiStar /><TiStar /><TiStar /></span></p>
                             <h6>AlpineDew Calming Face Oil</h6>
                             <p className='g4'>Rs.100.00 - Rs.300.00
@@ -76,9 +76,9 @@ const Home = () => {
                     </div>
                 </div>
                 <div className='c3'>
-                    <div class="card3" >
-                        <img src={skin5} width={200} height={220} />
-                        <div class="card-body3">
+                    <div className="card3" >
+                        <img src={skin5} width={200} height={220} alt="Skin product 5" />
+                        <div className="card-body3">
                             <p className='g5'>Aqua <span className="starss"><TiStar /><TiStar /><TiStar /><TiStar /><TiStar /></span></p>
                             <h6>Aqualogica</h6>
                             <p className='g6'>Rs.100.00 - Rs.300.00
@@ -87,9 +87,9 @@ const Home = () => {
                     </div>
                 </div>
                 <div className='c4'>
-                    <div class="card4" >
-                        <img src={skin6} width={200} height={220} />
-                        <div class="card-body3">
+                    <div className="card4" >
+                        <img src={skin6} width={200} height={220} alt="Skin product 6" />
+                        <div className="card-body3">
                             <p className='g5'>SolarVive <span className="stars"><TiStar /><TiStar /><TiStar /><TiStar /><TiStar /></span></p>
                             <h6>AquaLuxe Hydrating Face Oil</h6>
                             <p className='g6'>Rs.100.00 - Rs.300.00
@@ -109,7 +109,7 @@ const Home = () => {
 
 
             <div className='home2'>
-                <img src={skin7} height={700} />
+                <img src={skin7} height={700} alt="Skin product 7" />
                 <h1 className='f1'>SKINCARE MADE WITH  </h1>
                 <h1 className='f2'> THE MOST</h1>
                 <h1 className='f3'>RICHEST INGREDIENTS</h1>
@@ -124,16 +124,16 @@ const Home = () => {
 
             <div className='row4'>
                 <div className='cc1'>
-                    <img src={face1} width={250} height={300} />
+                    <img src={face1} width={250} height={300} alt="face product 1" />
                 </div>
                 <div className='cc2'>
-                    <img src={face2} width={250} height={300} />
+                    <img src={face2} width={250} height={300} alt="face product 2"  />
                 </div>
                 <div className='cc3'>
-                    <img src={face3} width={300} height={300} />
+                    <img src={face3} width={300} height={300} alt="face product 3" />
                 </div>
                 <div className='cc4'>
-                    <img src={face4} width={300} height={300} />
+                    <img src={face4} width={300} height={300} alt="face product 4" />
                 </div>
             </div>
 
@@ -154,9 +154,9 @@ const Home = () => {
 
             <div className='row1'>
                 <div className='c1'>
-                    <div class="card5" >
-                        <img src={cream1} width={180} height={220} />
-                        <div class="card-body1">
+                    <div className="card5" >
+                        <img src={cream1} width={180} height={220} alt="face product 5" />
+                        <div className="card-body1">
                             <p className='g'>Derma<span className="starss"><TiStar /><TiStar /><TiStar /><TiStar /><TiStar /></span></p>
                             <h6>AiryGlow Gel Sunscreen SPF 60</h6>
                             <p className='g1'>Rs.100.00 - Rs.300.00
@@ -165,9 +165,9 @@ const Home = () => {
                     </div>
                 </div>
                 <div className='c2'>
-                    <div class="card2" >
-                        <img src={cream2} width={200} height={220} />
-                        <div class="card-body2">
+                    <div className="card2" >
+                        <img src={cream2} width={200} height={220} alt="face product 6" />
+                        <div className="card-body2">
                             <p className='g3'>Loreal<span className="starss"><TiStar /><TiStar /><TiStar /><TiStar /><TiStar /></span></p>
                             <h6>AlpineDew Calming Face Oil</h6>
                             <p className='g4'>Rs.100.00 - Rs.300.00
@@ -176,9 +176,9 @@ const Home = () => {
                     </div>
                 </div>
                 <div className='c3'>
-                    <div class="card3" >
-                        <img src={cream3} width={200} height={220} />
-                        <div class="card-body3">
+                    <div className="card3" >
+                        <img src={cream3} width={200} height={220} alt="face product 7" />
+                        <div className="card-body3">
                             <p className='g5'>Aqua <span className="starss"><TiStar /><TiStar /><TiStar /><TiStar /><TiStar /></span></p>
                             <h6>Aqualogica</h6>
                             <p className='g6'>Rs.100.00 - Rs.300.00
@@ -187,9 +187,9 @@ const Home = () => {
                     </div>
                 </div>
                 <div className='c4'>
-                    <div class="card4" >
-                        <img src={cream4} width={200} height={220} />
-                        <div class="card-body3">
+                    <div className="card4" >
+                        <img src={cream4} width={200} height={220} alt="face product 8" />
+                        <div className="card-body3">
                             <p className='g5'>SolarVive <span className="stars"><TiStar /><TiStar /><TiStar /><TiStar /><TiStar /></span></p>
                             <h6>AquaLuxe Hydrating Face Oil</h6>
                             <p className='g6'>Rs.100.00 - Rs.300.00
@@ -247,16 +247,16 @@ const Home = () => {
                     <p className='h'> Anya S</p>
                     <p className='starr'><TiStar /><TiStar /><TiStar /><TiStar /><TiStar /></p>
 
-                    <div class="card0" >
-                        <div class="row g-0">
-                            <div class="l1">
-                                <img src={skin8} />
+                    <div className="card0" >
+                        <div className="row g-0">
+                            <div className="l1">
+                                <img src={skin8} alt="face product 9" />
                             </div>
-                            <div class="col-md-8">
-                                <div class="car">
-                                    <h5 class="card-title">Makeup Foundation Bottle</h5>
+                            <div className="col-md-8">
+                                <div className="car">
+                                    <h5 className="card-title">Makeup Foundation Bottle</h5>
 
-                                    <p class="x"><small class="text-body-secondary">850.00</small></p>
+                                    <p className="x"><small className="text-body-secondary">850.00</small></p>
                                 </div>
                             </div>
                         </div>
@@ -272,16 +272,16 @@ const Home = () => {
                     <p className='hh'> Anya S</p>
                     <p className='starrr'><TiStar /><TiStar /><TiStar /><TiStar /><TiStar /></p>
 
-                    <div class="card9" >
-                        <div class="row g-0">
-                            <div class="l2">
-                                <img src={skin9} />
+                    <div className="card9" >
+                        <div className="row g-0">
+                            <div className="l2">
+                                <img src={skin9} alt="face product 10" />
                             </div>
-                            <div class="col-md-8">
-                                <div class="car1">
-                                    <h5 class="card-title">Glow  Brightening Serum</h5>
+                            <div className="col-md-8">
+                                <div className="car1">
+                                    <h5 className="card-title">Glow  Brightening Serum</h5>
 
-                                    <p class="xx"><small class="text-body-secondary">850.00</small></p>
+                                    <p className="xx"><small className="text-body-secondary">850.00</small></p>
                                 </div>
                             </div>
                         </div>
@@ -293,16 +293,16 @@ const Home = () => {
                     <p className='hhh'> Anya S</p>
                     <p className='starrrr'><TiStar /><TiStar /><TiStar /><TiStar /><TiStar /></p>
 
-                    <div class="card9" >
-                        <div class="row g-0">
-                            <div class="l3">
-                                <img src={skin10} />
+                    <div className="card9" >
+                        <div className="row g-0">
+                            <div className="l3">
+                                <img src={skin10} alt="face product 11" />
                             </div>
-                            <div class="col-md-8">
-                                <div class="car2">
-                                    <h5 class="card-title">Glow  Brightening Serum</h5>
+                            <div className="col-md-8">
+                                <div className="car2">
+                                    <h5 className="card-title">Glow  Brightening Serum</h5>
 
-                                    <p class="xxx"><small class="text-body-secondary">850.00</small></p>
+                                    <p className="xxx"><small className="text-body-secondary">850.00</small></p>
                                 </div>
                             </div>
                         </div>
@@ -330,9 +330,9 @@ const Home = () => {
 
             <div className='homee1'>
                 <div className='cd1'>
-                    <div class="card111" >
-                        <img src={s1} width={300} height={350} />
-                        <div class="card-body111">
+                    <div className="card111" >
+                        <img src={s1} width={300} height={350} alt="face product 12" />
+                        <div className="card-body111">
 
                             <p className='gg'>COSMETIC<span className="starss1">Read More</span></p>
 
@@ -343,9 +343,9 @@ const Home = () => {
                     </div>
                 </div>
                 <div className='cd2'>
-                    <div class="card111" >
-                        <img src={s2} width={300} height={350} />
-                        <div class="card-body1111">
+                    <div className="card111" >
+                        <img src={s2} width={300} height={350} alt="face product 13" />
+                        <div className="card-body1111">
 
                             <p className='gg3'>BEAUTY TRENDS<span className="starss1">Read More</span></p>
 
@@ -356,9 +356,9 @@ const Home = () => {
                     </div>
                 </div>
                 <div className='cd3'>
-                    <div class="card01" >
-                        <img src={s3} width={300} height={350} />
-                        <div class="card-body02">
+                    <div className="card01" >
+                        <img src={s3} width={300} height={350} alt="face product 14" />
+                        <div className="card-body02">
 
                             <p className='gg5'>COSMETIC<span className="starsss1">Read More</span></p>
 

@@ -36,7 +36,12 @@ const Faceoilproduct = () => {
 
                     <div key={item.id}>
                         <div className="box">
-                            <img src={item.img} width={100} height={200} />
+<img 
+   src={item.img} 
+   alt={item.name} 
+   width={100} 
+   height={200} 
+/>
 
                         </div><div className="pa">
                             <p>{item.name}<span className="e3"><FaStarHalfAlt /><FaStarHalfAlt /><FaStarHalfAlt /><FaStarHalfAlt /><FaStarHalfAlt /></span></p>

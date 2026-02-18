@@ -13,7 +13,7 @@ const Faceoilproduct = () => {
         dispatch(addToCart(item))
         
 
-        fetch('http://localhost:6578/post', {
+        fetch('https://skin-backend-g3o4.onrender.com/post', {
             method: "POST",
             headers: {
                 'Content-Type': 'application/json'

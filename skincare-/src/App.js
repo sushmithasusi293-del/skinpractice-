@@ -30,12 +30,7 @@ function App() {
         </Routes>
         <Footer />
       </BrowserRouter>
-      {/* 
-      <Sunprotect />
-      <Tonerproduct />
-      <Serumproduct/>
-      <Faceoilproduct/>
-      <Moiproduct/> */}
+    
     </div>
   );
 }

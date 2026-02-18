@@ -1,11 +1,39 @@
 
 const express = require('express');
 const app = express();
-const port = 6578;
+const port = process.env.PORT || 6578;
 
 const cors = require("cors");
 
-app.use(cors());
+// app.use(cors("*"));
+
+// app.use(
+//   cors({
+//     origin: "*",
+//   })
+// );
+
+
+const allowedOrigins = [
+  "http://localhost:3000/", 
+  "https://beauty-skin-care.onrender.com",
+  "*" 
+];
+
+app.use(
+  cors({
+    origin: function (origin, callback) {
+      if (!origin || allowedOrigins.includes(origin)) {
+        callback(null, true);
+      } else {
+        callback(new Error("Not allowed by CORS"));
+      }
+    },
+    credentials: true,
+  })
+);
+
+
 app.use(express.json());
 app.get('/', (req, res) => {
     res.send("hello")
@@ -36,6 +64,7 @@ async function run() {
     
 
         const serum = client.db("skin").collection("care")
+
         app.post("/post", async (req, res) => {
             const data = req.body
             const result = await serum.insertOne(data)

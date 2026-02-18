@@ -2,7 +2,9 @@
 const express = require('express');
 const app = express();
 const port = 6578;
+
 const cors = require("cors");
+
 app.use(cors());
 app.use(express.json());
 app.get('/', (req, res) => {
@@ -10,6 +12,7 @@ app.get('/', (req, res) => {
 
 
 })
+
 
 
 const { MongoClient, ServerApiVersion ,ObjectId} = require('mongodb');

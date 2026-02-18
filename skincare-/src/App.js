@@ -17,10 +17,7 @@ function App() {
       <BrowserRouter>
         <Navbar />
         <Routes>
-
-
           <Route path='/' element={<Home />} />
-
           <Route path='/sunscreen' element={<Sunprotect />} />
           <Route path='/toner' element={<Tonerproduct />} />
           <Route path='/serum' element={<Serumproduct />} />
@@ -30,7 +27,6 @@ function App() {
         </Routes>
         <Footer />
       </BrowserRouter>
-    
     </div>
   );
 }
